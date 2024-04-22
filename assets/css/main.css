@@ -371,7 +371,7 @@ hr {
 
 .btn {
 	-moz-user-select: none;
-	background: #021a47;
+	background: #201658;
 	border: medium none;
 	border-radius: 0;
 	color: #fff;
@@ -394,7 +394,7 @@ hr {
 }
 
 .btn:hover {
-	background: #021a47;
+	background: #201658;
 	color: #fff
 }
 
@@ -421,7 +421,7 @@ hr {
 
 .white-btn {
 	-moz-user-select: none;
-	background: #021a47;
+	background: #201658;
 	border: medium none;
 	border-radius: 0;
 	color: #fff;
@@ -2466,7 +2466,7 @@ hr {
 }
 
 .main-header .main-menu ul li a {
-	color: #002e5b;
+	color: #F9E8C9;
 	font-weight: 500;
 	padding: 39px 19px;
 	display: block;
@@ -2486,7 +2486,7 @@ hr {
 }
 
 .main-header .main-menu ul li:hover>a {
-	color: #f27420
+	color: #98ABEE
 }
 
 .main-header .main-menu ul ul.submenu {
@@ -2552,7 +2552,7 @@ hr {
 }
 
 .top-bg {
-	background: #002d5b
+	background: #201658
 }
 
 .header-sticky ul li a {
@@ -2564,7 +2564,7 @@ hr {
 }
 
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #f27420 !important
+	background-color: #201658 !important
 }
 
 .slicknav_nav {
@@ -2610,7 +2610,7 @@ hr {
 
 @media (max-width: 767px) {
 	.slider-height {
-		min-height: 550px
+		min-height: 450px
 	}
 }
 
@@ -2682,11 +2682,15 @@ hr {
 	}
 }
 
+.slider-area .hero__caption .sub-stock {
+	margin-left: 90px
+}
+
 .slider-area .hero__caption h1 {
-	font-size: 70px;
+	font-size: 100px;
 	font-weight: 900;
-	margin-bottom: 14px;
-	color: #ffffff;
+	margin-top: 120px;
+	color: #F9E8C9;
 	font-family: 'Barlow', sans-serif;
 	line-height: 1.2;
 	text-transform: uppercase
@@ -2694,22 +2698,37 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	.slider-area .hero__caption h1 {
-		font-size: 60px;
-		line-height: 1.2
+		font-size: 100px;
+		line-height: 1.2;
+		margin-top: 100px;
+	}
+
+	.slider-area .hero__caption .sub-stock {
+		margin-left: 50px
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.slider-area .hero__caption h1 {
-		font-size: 50px;
-		line-height: 1.2
+		font-size: 70px;
+		line-height: 1.2;
+		margin-top: 50px;
+	}
+
+	.slider-area .hero__caption .sub-stock {
+		margin-left: 40px
 	}
 }
 
 @media (max-width: 767px) {
 	.slider-area .hero__caption h1 {
-		font-size: 35px;
-		line-height: 1.2
+		font-size: 45px;
+		line-height: 1.2;
+		margin-top: 65px
+	}
+
+	.slider-area .hero__caption .sub-stock {
+		margin-left: 20px
 	}
 }
 
@@ -2860,7 +2879,7 @@ hr {
 }
 
 .services-area .single-services .services-caption p {
-	color: #021a47;
+	color: #201658;
 	font-size: 16px;
 	line-height: 25px
 }
@@ -3550,7 +3569,7 @@ hr {
 }
 
 .t-bg {
-	background: #021a47
+	background: #201658
 }
 
 .slick-initialized .slick-slide {
@@ -4266,7 +4285,7 @@ hr {
 }
 
 .blog_details a:hover {
-	color: #021a47
+	color: #201658
 }
 
 .blog_details h2 {
@@ -4729,7 +4748,7 @@ hr {
 }
 
 .single-post-area .blog-author a:hover {
-	color: #021a47
+	color: #201658
 }
 
 .single-post-area .blog-author p {
