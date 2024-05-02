@@ -2601,6 +2601,9 @@ hr{
     color: #fff;
     background: #ff5f13;
 }
+.service-cap a:hover {
+    color: #141428
+}
 .more-btn{
     color:#161e46;
     font-size:14px;
@@ -3092,11 +3095,22 @@ hr{
 .news-img:hover .news-img img{
     transform:scale(1.1)
 }
+.navy-back {
+    background: #141428;
+}
 .project-area .project-caption .single-project,.about-area .project-caption .single-project,.contact-section .project-caption .single-project{
-    position:relative
+    position: relative;
+    width: auto; /* Set your desired width */
+    height: auto; /* Set your desired height */
+    overflow: hidden; /* Ensure that the image does not overflow the container */
+}
+.project-img img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 .project-area .project-caption .single-project .project-img img,.about-area .project-caption .single-project .project-img img,.contact-section .project-caption .single-project .project-img img{
-    width:100%
+    width:100%;
 }
 .project-area .project-caption .single-project .project-cap,.about-area .project-caption .single-project .project-cap,.contact-section .project-caption .single-project .project-cap{
     padding:20px 20px;
@@ -3184,7 +3198,7 @@ hr{
 .project-area .nav-tabs .nav-link,.about-area .nav-tabs .nav-link,.contact-section .nav-tabs .nav-link{
     border:0;
     border-bottom:2px solid transparent;
-    padding:10px 20px
+    padding:10px 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     .project-area .nav-tabs .nav-link,.about-area .nav-tabs .nav-link,.contact-section .nav-tabs .nav-link{
@@ -3206,13 +3220,94 @@ hr{
         padding:10px 15px
     }
 }
+ /* Style the Image Used to Trigger the Modal */
+ #modalImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+    /* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+#modal_caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    }
+
+    /* Add Animation - Zoom in the Modal */
+.modal-content, #modal_caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+    /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content {
+    width: 100%;
+}
+} 
+
+
 .project-area .nav-tabs .nav-item.show .nav-link,.project-area .nav-tabs .nav-link.active,.about-area .nav-tabs .nav-item.show .nav-link,.about-area .nav-tabs .nav-link.active,.contact-section .nav-tabs .nav-item.show .nav-link,.contact-section .nav-tabs .nav-link.active{
     color:#ff5f13;
     background:none
 }
 .project-area .nav-tabs .nav-item,.about-area .nav-tabs .nav-item,.contact-section .nav-tabs .nav-item{
     display:block;
-    color:#161e46;
+    color:#a5c9d9;
     font-weight:500;
     text-transform:capitalize;
     font-size:16px
@@ -3709,6 +3804,38 @@ hr{
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+}
+
+.horizontal-scroll-container {
+    background-color: #333;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.horizontal-scroll-container img {
+    width: auto; /* Allow images to resize proportionally */
+    display: inline-block; /* Ensure each image occupies the same amount of space */
+    vertical-align: top; /* Align images at the top of the container */
+    margin-right: 10px; /* Add spacing between images */
+    max-height: 500px;
+}
+
+@media (max-width: 767px) {
+    .horizontal-scroll-container {
+        overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+        white-space: nowrap;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    }
+
+    .horizontal-scroll-container img {
+        display: inline-block; /* Ensure each image occupies the same amount of space */
+        vertical-align: top; /* Align images at the top of the container */
+        margin-right: 5px; /* Reduce spacing between images on smaller screens */
+        max-height: calc(100vw - 20px); /* Set max-height relative to viewport width */
+        width: auto; /* Allow images to resize proportionally */
     }
 }
 
