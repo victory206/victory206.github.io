@@ -145,14 +145,25 @@
             </div>
         </div>
         <!-- slider Area End-->
-        <!-- Project Area Start -->
-        <section class="project-area navy-back section-padding30">
+         <!-- Gallery Area Start -->
+         <!-- The Modal -->
+         <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        
+        <!-- Modal Caption (Image Text) -->
+        <!-- <div id="modal_caption"></div> -->
+        </div>
+         <section class="project-area section-padding30">
             <div class="container">
                <div class="project-heading mb-35">
                     <div class="row align-items-end">
                         <div class="col-lg-6">
                             <!-- Section Tittle -->
-                            <div class="section-tittle section-tittle6">
+                            <div class="section-tittle section-tittle3">
                                 <div class="front-text">
                                     <h2 class="">Our Projects</h2>
                                 </div>
@@ -182,48 +193,56 @@
                             <!-- card ONE -->
                             <div class="tab-pane fade active show" id="nav-all" role="tabpanel" aria-labelledby="nav-home-tab">           
                                 <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/outdoor/deck_stairs2.JPG" alt="" onclick="openModal('assets/img/outdoor/deck_stairs2.JPG')">
-                                                </div>
-                                            </div>
+                                    <div class="row gallery-item">
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck_stairs2.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs2.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/commerical/commerical_lighting1.JPG" alt="" onclick="openModal('assets/img/commerical/commerical_lighting1.JPG')">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck_stairs1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs1.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/outdoor/gate1.JPG" alt="" onclick="openModal('assets/img/outdoor/gate1.JPG')">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/gate1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/gate1.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/outdoor/deck_stairs1.JPG" alt="" onclick="openModal('assets/img/outdoor/deck_stairs1.JPG')">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/commerical/commerical_lighting1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_lighting1.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/interior/interior1.JPG" alt="" onclick="openModal('assets/img/interior/interior1.JPG')">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/commerical/commerical_lighting2.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_lighting2.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/commerical/commerical_lighting2.JPG" alt="" onclick="openModal('assets/img/commerical/commerical_lighting2.JPG')">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck1.JPG);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/kitchen2.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/kitchen2.png);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/interior3.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/interior3.png);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/outdoor/garage2.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/garage2.png);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/outdoor/garage1.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/garage1.png);"></div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -231,48 +250,56 @@
                             <!-- OUTDOOR -->
                             <div class="tab-pane fade" id="nav-outdoor" role="tabpanel" aria-labelledby="nav-profile-tab">
                                 <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project5.png" alt="">
-                                                </div>
-                                            </div>
+                                    <div class="row gallery-item">
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck_stairs1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs1.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project6.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck_stairs2.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs2.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project1.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck_stairs3.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs3.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project2.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/outdoor/deck_stairs4.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs4.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project3.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/outdoor/deck_stairs5.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck_stairs5.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project4.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck1.JPG);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/deck2.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/deck2.JPG);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/outdoor/gate1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/gate1.JPG);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/outdoor/garage2.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/garage2.png);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/outdoor/garage1.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/outdoor/garage1.png);"></div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -280,98 +307,96 @@
                             <!-- COMMERICAL -->
                             <div class="tab-pane fade" id="nav-commerical" role="tabpanel" aria-labelledby="nav-last-tab">
                                 <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project1.png" alt="">
-                                                </div>
-                                            </div>
+                                    <div class="row gallery-item">
+                                        <div class="col-md-4">
+                                            <a href="assets/img/commerical/commerical_door.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_door.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project2.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/commerical/tnt1.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/tnt1.png);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project3.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/commerical/tnt2.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/tnt2.png);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project4.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/commerical/commerical_lighting1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_lighting1.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project5.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/commerical/commerical_lighting2.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_lighting2.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project6.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/commerical/commerical_stairs.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_stairs.JPG);"></div>
+                                            </a>
                                         </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/commerical/commerical_wall1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_wall1.JPG);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/commerical/commerical_bathroom.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/commerical/commerical_bathroom.JPG);"></div>
+                                            </a>
+                                        </div>
+                                
                                     </div>
                                 </div>
                             </div>
                             <!-- INTERIOR -->
                             <div class="tab-pane fade" id="nav-interior" role="tabpanel" aria-labelledby="nav-technology">
                                 <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project1.png" alt="">
-                                                </div>
-                                            </div>
+                                    <div class="row gallery-item">
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/kitchen2.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/kitchen2.png);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project2.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/kitchen1.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/kitchen1.png);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project3.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/kitchen3.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/kitchen3.png);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project4.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/interior/bath3.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/bath3.png);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project5.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <a href="assets/img/interior/shower1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/shower1.JPG);"></div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="assets/img/gallery/project6.png" alt="">
-                                                </div>
-                                            </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/interior2.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/interior2.JPG);"></div>
+                                            </a>
                                         </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/interior1.JPG" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/interior1.JPG);"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="assets/img/interior/interior3.png" class="img-pop-up">
+                                                <div class="single-gallery-image" style="background: url(assets/img/interior/interior3.png);"></div>
+                                            </a>
+                                        </div>
+                                
                                     </div>
                                 </div>
                             </div>
@@ -381,7 +406,7 @@
                 </div>
             </div>
         </section>
-        <!-- Project Area End -->
+        <!-- Gallery Area End -->
     </main>
     <footer>
         <!-- Footer Start-->
