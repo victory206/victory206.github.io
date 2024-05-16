@@ -2239,6 +2239,12 @@ hr{
         display:none
     }
 }
+.big-logo img{
+    max-width: 150px;
+}
+.small-logo img {
+    max-width: 100px;
+}
 .main-header ul>li:hover>ul.submenu{
     visibility:visible;
     opacity:1;
@@ -2394,7 +2400,7 @@ hr{
     font-family: 'Barlow', sans-serif;
     line-height: 1;
     text-transform: uppercase;
-    color: #a5c9d9;
+    color: #d1dac7;
     margin-top: 105px;
     padding: 0;
 }
@@ -2495,12 +2501,12 @@ hr{
 
 .slider-area .hero__caption .stock-text h1:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 1px #a5c9d9;
+    -webkit-text-stroke: 1px #d1dac7;
     -webkit-text-fill-color: transparent;
 }
 
 .slider-area .hero__caption .stock-text h1:nth-child(2) {
-    color: #a5c9d9;
+    color: #d1dac7;
     -webkit-animation: animate 4s ease-in-out infinite;
     animation: animate 4s ease-in-out infinite;
 }
@@ -2864,7 +2870,7 @@ hr{
 }
 @media (max-width: 575px){
     .support-company-area .support-wrapper .right-content .support-img-cap{
-        padding:35px 0px
+        display: none;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px){
