@@ -1860,8 +1860,7 @@ hr{
 }
 @media (max-width: 575px){
     .section-tittle span.back-text{
-        font-size:56px;
-        transform:translateY(-136%)
+        display: none;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -2545,7 +2544,7 @@ hr{
     top: 50%;
     left: -30px;
     transform: translateY(-50%);
-    background: #ff5f13;
+    background: #d1dac7;
 }
 
 @media (max-width: 575px) {
@@ -2856,6 +2855,22 @@ hr{
 .support-company-area .support-wrapper .right-content .right-img img{
     width:100%
 }
+.about-img {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden; /* Optional: Prevents scrolling if the image is larger than the viewport */
+  }
+  
+  /* Center the image and ensure it maintains its aspect ratio without exceeding screen size */
+  .about-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image is contained within the box while maintaining aspect ratio */
+  }
 .support-company-area .support-wrapper .right-content .support-img-cap{
     position:absolute;
     bottom:0px;
@@ -3165,6 +3180,9 @@ hr{
 .latest-news-area .single-news .news-caption a.d-btn{
     position:relative;
     text-transform:uppercase
+}
+.contact-img img{
+    max-width: 80%;
 }
 .latest-news-area .single-news .news-caption a.d-btn::before{
     content:"";
@@ -3661,8 +3679,9 @@ hr{
         -o-transform:translate(5px, 0)
     }
 }
-.footer-area .footer-logo{
-    margin-bottom:30px
+.footer-area .footer-logo img{
+    margin-bottom:20px;
+    max-width: 250px;
 }
 .footer-area .footer-pera .info1{
     margin-bottom:10px;
@@ -3773,7 +3792,7 @@ hr{
     transition:all .4s ease-out 0s
 }
 .footer-area .footer-copy-right{
-    padding-top:20px
+    padding-top:0px
 }
 @media (max-width: 575px){
     .footer-area .footer-copy-right{
@@ -3837,6 +3856,9 @@ hr{
 .single-services .details-img img{
     width:100%
 }
+.details-caption p {
+    font-size: 22px;
+}
 .single-services .details-caption h3{
     font-size:36px;
     font-weight:700;
@@ -3878,6 +3900,10 @@ hr{
 
 .service-text-container {
     flex: 1;
+}
+
+.service-text-container p {
+    font-size: 20px;
 }
 
 .service-gallery-image {
@@ -5597,7 +5623,8 @@ b,sup,sub,u,del{
 .unordered-list li{
     position:relative;
     padding-left:30px;
-    line-height:1.82em !important
+    line-height:1.82em !important;
+    font-size: 20px
 }
 .unordered-list li:before{
     content:"";
