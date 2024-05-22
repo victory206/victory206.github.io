@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900|Teko:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900|Teko:300,400,500,600,700|Montserrat:400,700|Roboto:200,300,400,500,600,700,800,900&display=swap");
 .white-bg{
     background:#ffffff
 }
@@ -2722,218 +2722,202 @@ hr{
     color:#fff;
     background:#ff5f13
 }
-.support-company-area .support-wrapper{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap
+/* General Styles */
+.support-company-area .support-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif; /* Modern body text font */
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper{
-        display:block
+
+/* Responsive adjustments */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .support-company-area .support-wrapper {
+        display: block;
     }
 }
-.support-company-area .support-wrapper .left-content{
-    width:54%;
-    padding-left:100px
+
+/* Left Content */
+.support-company-area .support-wrapper .left-content {
+    width: 54%;
+    padding-left: 100px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1600px){
-    .support-company-area .support-wrapper .left-content{
-        width:49%
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .support-company-area .support-wrapper .left-content {
+        padding-left: 30px;
+        width: 49%;
     }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1440px){
-    .support-company-area .support-wrapper .left-content{
-        padding-left:30px;
-        width:49%
+
+@media only screen and (min-width: 1441px) and (max-width: 1800px) {
+    .support-company-area .support-wrapper .left-content {
+        padding-left: 100px;
+        width: 49%;
     }
 }
-@media only screen and (min-width: 1441px) and (max-width: 1800px){
-    .support-company-area .support-wrapper .left-content{
-        padding-left:100px;
-        width:49%
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .support-company-area .support-wrapper .left-content {
+        width: 100%;
+        padding-left: 120px;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper .left-content{
-        width:100%;
-        padding-left:120px
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px),
+only screen and (max-width: 575px) {
+    .support-company-area .support-wrapper .left-content {
+        width: 100%;
+        padding-left: 30px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .support-company-area .support-wrapper .left-content{
-        width:100%;
-        padding-left:30px
+
+@media (max-width: 575px) {
+    .support-company-area .support-wrapper .left-content {
+        padding-left: 0px;
     }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .support-company-area .support-wrapper .left-content{
-        width:100%;
-        padding-left:30px
+
+/* Left Content Caption */
+.support-company-area .support-wrapper .left-content .support-caption {
+    padding-right: 40px;
+}
+
+@media (max-width: 575px),
+only screen and (min-width: 576px) and (max-width: 767px) {
+    .support-company-area .support-wrapper .left-content .support-caption {
+        padding-right: 20px;
     }
 }
-@media (max-width: 575px){
-    .support-company-area .support-wrapper .left-content{
-        width:100%;
-        padding-left:0px
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .support-company-area .support-wrapper .left-content .support-caption {
+        padding-right: 70px;
     }
 }
-.support-company-area .support-wrapper .left-content .support-caption{
-    padding-right:40px
-}
-@media (max-width: 575px){
-    .support-company-area .support-wrapper .left-content .support-caption{
-        padding-right:20px
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .support-company-area .support-wrapper .left-content .support-caption{
-        padding-right:20px
-    }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper .left-content .support-caption{
-        padding-right:70px
-    }
-}
-.support-company-area .support-wrapper .left-content .support-caption p{
-    margin-bottom:46px;
-    font-size:18px;
-    font-weight:medium;
-}
-.support-company-area .support-wrapper .left-content .support-caption p.pera-top{
+
+.support-company-area .support-wrapper .left-content .support-caption p {
     margin-bottom: 20px;
-    font-size:28px;
-    font-weight:700;
-    color:#0b0b2b
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333; /* Adjust color as needed */
 }
-.support-company-area .support-wrapper .right-content{
-    width:40%;
-    position:relative
+
+.support-company-area .support-wrapper .left-content .support-caption p.pera-top {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0b0b2b;
+    font-family: 'Montserrat', sans-serif; /* Modern heading font */
 }
-@media only screen and (min-width: 1200px) and (max-width: 1600px){
-    .support-company-area .support-wrapper .right-content{
-        width:49%
+
+/* Right Content */
+.support-company-area .support-wrapper .right-content {
+    width: 40%;
+    position: relative;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .support-company-area .support-wrapper .right-content {
+        width: 49%;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper .right-content{
-        width:80%;
-        margin-left:119px;
-        padding-top:50px
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .support-company-area .support-wrapper .right-content {
+        width: 80%;
+        margin-left: 119px;
+        padding-top: 50px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .support-company-area .support-wrapper .right-content{
-        width:80%;
-        padding-top:50px
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px),
+only screen and (max-width: 575px) {
+    .support-company-area .support-wrapper .right-content {
+        width: 100%;
+        padding-top: 50px;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper .right-content{
-        width:100%;
-        padding-top:50px
-    }
+
+.support-company-area .support-wrapper .right-content .right-img img {
+    width: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .support-company-area .support-wrapper .right-content{
-        width:100%;
-        padding-top:50px
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .support-company-area .support-wrapper .right-content{
-        width:100%;
-        padding-top:50px
-    }
-}
-@media (max-width: 575px){
-    .support-company-area .support-wrapper .right-content{
-        width:100%;
-        padding-top:50px
-    }
-}
-.support-company-area .support-wrapper .right-content .right-img img{
-    width:100%
-}
+
+/* About Image */
 .about-img {
     margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh; /* Adjust height as needed */
+    width: 90vw;
     overflow: hidden; /* Optional: Prevents scrolling if the image is larger than the viewport */
-  }
-  
-  /* Center the image and ensure it maintains its aspect ratio without exceeding screen size */
-  .about-img img {
+}
+
+/* Center the image and ensure it maintains its aspect ratio without exceeding screen size */
+.about-img img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain; /* Ensures the image is contained within the box while maintaining aspect ratio */
-  }
-.support-company-area .support-wrapper .right-content .support-img-cap{
-    position:absolute;
-    bottom:0px;
-    background:#1f2b7b;
-    padding:59px 28px;
-    border-radius:5px
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper .right-content .support-img-cap{
-        padding:27px 18px
+
+/* Support Image Caption */
+.support-company-area .support-wrapper .right-content .support-img-cap {
+    position: absolute;
+    bottom: 0;
+    background: #1f2b7b;
+    padding: 35px 18px;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px) {
+    .support-company-area .support-wrapper .right-content .support-img-cap {
+        padding: 27px 18px;
     }
 }
-@media (max-width: 575px){
-    .support-company-area .support-wrapper .right-content .support-img-cap{
+
+@media (max-width: 575px) {
+    .support-company-area .support-wrapper .right-content .support-img-cap {
         display: none;
     }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .support-company-area .support-wrapper .right-content .support-img-cap{
-        padding:35px 18px
+
+.support-company-area .support-wrapper .right-content .support-img-cap span {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif; /* Modern heading font */
+    line-height: 1.2;
+}
+
+@media (max-width: 575px) {
+    .support-company-area .support-wrapper .right-content .support-img-cap span {
+        padding: 6px 40px;
+        font-size: 38px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .support-company-area .support-wrapper .right-content .support-img-cap{
-        padding:35px 18px
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px) {
+    .support-company-area .support-wrapper .right-content .support-img-cap span {
+        font-size: 35px;
     }
 }
-.support-company-area .support-wrapper .right-content .support-img-cap span{
-    font-size:60px;
-    color:#fff;
-    text-transform:uppercase;
-    font-weight:700;
-    font-family:"Barlow",sans-serif;
-    line-height:1.2
-}
-@media (max-width: 575px){
-    .support-company-area .support-wrapper .right-content .support-img-cap span{
-        padding:6px 40px;
-        font-size:38px
-    }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .support-company-area .support-wrapper .right-content .support-img-cap span{
-        font-size:35px
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .support-company-area .support-wrapper .right-content .support-img-cap span{
-        font-size:35px
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .support-company-area .support-wrapper .right-content .support-img-cap span{
-        font-size:35px
-    }
-}
-.support-company-area .support-wrapper .right-content .support-img-cap P{
-    color:#fff;
-    line-height:1;
-    margin:0;
-    font-size:16px;
-    text-transform:uppercase;
-    letter-spacing:.5em
+
+.support-company-area .support-wrapper .right-content .support-img-cap p {
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-family: 'Roboto', sans-serif; /* Modern body text font */
 }
 .support-header {
     padding-top: 30px;
@@ -3858,12 +3842,13 @@ hr{
 }
 .details-caption p {
     font-size: 22px;
+    font-family:"Roboto"
 }
 .single-services .details-caption h3{
     font-size:36px;
     font-weight:700;
     line-height:1.2;
-    font-family:"Teko",sans-serif
+    font-family:"Roboto",sans-serif
 }
 
 .service-gallery-section {
@@ -5624,7 +5609,8 @@ b,sup,sub,u,del{
     position:relative;
     padding-left:30px;
     line-height:1.82em !important;
-    font-size: 20px
+    font-size: 20px;
+    font-family: "Roboto"
 }
 .unordered-list li:before{
     content:"";
