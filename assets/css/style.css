@@ -2846,10 +2846,6 @@ only screen and (max-width: 575px) {
 .support-company-area .support-wrapper .right-content .right-img img {
     max-width: 100%;
 }
-.responsive {
-    margin-top: auto;
-    height:max-content
-}
 
 /* About Image */
 .about-img {
