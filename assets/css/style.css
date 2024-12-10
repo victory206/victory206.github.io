@@ -2409,7 +2409,7 @@ hr{
     font-family: 'Barlow', sans-serif;
     line-height: 1;
     text-transform: uppercase;
-    color: #d1dac7;
+    color: #e3e3e3;
     margin-top: 105px;
     padding: 0;
 }
@@ -2510,12 +2510,12 @@ hr{
 
 .slider-area .hero__caption .stock-text h1:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 1px #d1dac7;
+    -webkit-text-stroke: 1px #e3e3e3;
     -webkit-text-fill-color: transparent;
 }
 
 .slider-area .hero__caption .stock-text h1:nth-child(2) {
-    color: #d1dac7;
+    color: #e3e3e3;
     -webkit-animation: animate 4s ease-in-out infinite;
     animation: animate 4s ease-in-out infinite;
 }
@@ -2554,7 +2554,7 @@ hr{
     top: 50%;
     left: -30px;
     transform: translateY(-50%);
-    background: #d1dac7;
+    background: #e3e3e3;
 }
 
 @media (max-width: 575px) {
